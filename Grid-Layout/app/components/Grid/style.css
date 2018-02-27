@@ -1,0 +1,23 @@
+/* Grid Styles */
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+
+
+.gridItem {
+  width:23%;
+  margin:15px;
+}
+
+.gridImage {
+  width:100%
+}
+
+.gridImage:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease-in-out;
+  transform: scale(1.1);
+}

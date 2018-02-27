@@ -1,0 +1,12 @@
+/* Grid Mobile Styles */
+
+@media (max-width: 450px) {
+  .grid{
+    flex-direction:column;
+  }
+
+  .gridItem{
+    width:100%;
+    margin:0;
+  }
+}
