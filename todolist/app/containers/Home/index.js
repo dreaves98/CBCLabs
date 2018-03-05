@@ -18,6 +18,9 @@ export default class Home extends React.PureComponent {
       inputItem:""
     }
   };
+  componentWillMount() {
+    this.getTasks();
+  }
   handleItem = (event) => {
     this.setState({
       inputItem:event.target.value
@@ -37,7 +40,7 @@ export default class Home extends React.PureComponent {
     }
   };
   getTasks = () => {
-    fetch('http://localhost:8000/api/getTasks',{
+    fetch('http://localhost:8000/api/getTasks', {
       method:'GET'
     })
     .then(function(response){
@@ -69,9 +72,7 @@ export default class Home extends React.PureComponent {
      this.forceUpdate();
    }.bind(this))
  };
- componentWillMount() {
-   this.getTasks();
- }
+
   render() {
     return (
        <div className="container">
