@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socrates Library</title>
+
+    <!-- connecting all .js files to main html page.-->
+    <script src="keeper.js" defer></script>
+    <script src="socrates.js" defer></script>
+
+    <link rel="stylesheet" href="socrates.css">
+
+</head>
+<body>
+    <!--Connecting #top to style the header.-->
+    <div id="top">
+        <h1>The Lost Library of Socrates</h1>
+    </div>
+    <!-- #header ID for css file editing.-->
+    <div id="header">
+
+    </div>
+    <!--#board ID for editing in the css.-->
+    <div id="board">
+
+    </div>
+    <!-- #guess Id is to guess a letter.-->
+    <div id="guess">
+        <label for="letterGuess">Guess a letter</label>
+        <input id="letterGuess" name="letterGuess" onkeyup="letterGuess(event)" placeHolder="type a letter & press enter" ><br>
+        <label for="wordGuess">Guess the word</label>
+        <input id="wordGuess" name="wordGuess" onkeyup="wordGuess(event)" placeHolder="type a word & press enter" ><br>
+    </div>
+    <!-- Different specials you can get throughout the game. -->
+    <div id="specials">
+        <p>
+            <text id="streln"></text>
+            <button class="button" type="button" onclick="Specials('Streln')">Streln</button>
+            The Streln special reveals the common letters S T R E L and N.
+
+        </p>
+        <p>
+            <text id="vowels"></text>
+            <button class="button" type="button" onclick="Specials('Vowels')">Vowels</button>
+            Vowels reveals all vowels in the puzzle.
+
+        </p>
+        <p>
+            <text id="pickALetter"></text>
+            <button class="button" type="button" onclick="Specials('PickALetter')">Pick A Letter</button>
+            The Pick A Letter special lets you reveal a letter in the position of your choosing.
+        </p>
+        <p>
+            <text id="freeLetter"></text>
+            <button class="button" type="button" onclick="Specials('FreeLetter')">Free Letter</button>
+            The Free Letter special reveals a random letter.
+        </p>
+    </div>
+
+
+</body>
+</html>

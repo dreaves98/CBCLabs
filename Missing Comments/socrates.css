@@ -1,0 +1,42 @@
+/* Use to edit the #top section from html*/
+#top{
+    border: solid black;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+}
+/*Use to edit the #header section from html*/
+#header{
+    border: solid black;
+    padding: 1px;
+    margin: 1px;
+    font-size: 24px;
+    text-align: center;
+}
+/*Use to edit the #board section from html*/
+#board{
+    border: solid black;
+    padding: 1px;
+    margin: 1px;
+    font-size: 48px;
+    text-align: center;
+}
+/*Use to edit the #guess section from html */
+#guess{
+    border: solid black;
+    padding: 1px;
+    margin: 1px;
+    font-size: 24px;
+}
+/*Use to edit the #specials section from html */
+#specials{
+    border: solid black;
+    padding: 1px;
+    margin: 1px;
+    font-size: 24px;
+}
+/* Use to edit the #button section from html*/
+.button{
+    background-color: darkkhaki;
+    font-size: 18px;
+}
