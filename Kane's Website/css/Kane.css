@@ -35,9 +35,9 @@ h1 {
 /* Modal Content/Box */
 .modal-content {
     background-color:lightblue;
-    margin: 5px auto; /* 15% from the top and centered */
+    margin: 5px auto; 
     border: 1px solid ;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
 
 /* The Close Button */
@@ -66,6 +66,8 @@ h1 {
   float:inherit;
 }
 
-.signup {
-  
+.signup{
+  color: black;
+  border: 2.5px solid powderblue;
+  padding: 30px;
 }
