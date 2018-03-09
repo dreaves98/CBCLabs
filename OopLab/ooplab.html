@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <script>
+    class Plants{
+      constructor(description){
+        this._description = description; //let _description = description;
+
+      }
+      get description()
+      {
+        return this._description;
+      }
+      set description(value)
+      {
+        this._description = value;
+      }
+      printPlant(){
+        console.log("Im a function in plants");
+      }
+    }
+     class NotTree extends Plants{
+       constructor(eatable, numOfLeaves){
+         super("Not a Tree");
+         this._eatable = eatable;
+         this._numOfLeaves = numOfLeaves;
+       }
+       get numOfLeaves()
+       {
+         return this._numOfLeaves;
+       }
+       print(){
+         console.log(this.description + ", so it has " + this._numOfLeaves + " leaves.");
+      }
+     }
+     class Tree extends Plants{
+       constructor(branches){
+         super("Is a tree", branches);
+         this._branches = branches;
+       }
+       get branches()
+       {
+         return this._branches;
+       }
+
+       print(){
+         console.log(this.description + " has this many " + this._branches + " branches.");
+       }
+
+     }
+
+   </script>
+  </head>
+  <body>
+
+
+
+
+
+
+  </body>
+</html>
